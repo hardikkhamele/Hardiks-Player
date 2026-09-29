@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build --workspace=frontend",
+  "buildCommand": "npx vite build apps/frontend",
   "outputDirectory": "apps/frontend/dist",
   "framework": "vite"
 }
