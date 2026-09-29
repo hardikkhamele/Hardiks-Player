@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Outfit", system-ui, sans-serif;
+  
+  /* Frutiger Aero / Y2K Tech colors */
+  --color-aero-blue: #00a8ff;
+  --color-aero-green: #00e676;
+  --color-glass-dark: rgba(20, 20, 25, 0.7);
+  --color-glass-light: rgba(255, 255, 255, 0.2);
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-glass-dark backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
+  }
+  
+  .glossy-btn {
+    @apply relative overflow-hidden bg-gradient-to-b from-white/20 to-transparent border border-white/20 hover:border-white/40 transition-all rounded-full;
+  }
+}
+
+body {
+  @apply bg-slate-900 text-slate-100 font-sans antialiased overflow-hidden h-screen w-screen m-0;
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
