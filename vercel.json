@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npx vite build apps/frontend",
+  "buildCommand": "cd apps/frontend && npx vite build",
   "outputDirectory": "apps/frontend/dist",
   "framework": "vite"
 }
